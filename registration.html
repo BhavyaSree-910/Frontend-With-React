@@ -1,0 +1,99 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registration Form</title>
+        <style>
+        .container{
+            margin:100px auto;
+            width:500px;
+            height:500px;
+            border: 3px solid black;
+            padding: 20px;
+            background-color: rgb(239, 140, 10);
+        }
+        section{
+            flex-direction:column;
+            margin-bottom: 12px;
+        }
+        label{
+            display: inline-block;
+            width: 120px;
+        }
+        .button-s{
+            
+            text-align: center;
+        }
+        .btn{
+         width: 100px;
+         height: 35px;
+         margin: 10px;
+        }
+        </style>
+    </head>
+    <body>
+        <form action="" method="post" enctype="multipart/form-data">
+            <div class="container">
+                <h2 align="center">Registration Form </h2>
+                <section>
+                <label for="name">First Name: </label>
+                <input type="text" name="fname" required placeholder="Enter first name">
+                </section>
+                <section>
+                    <label for="name">Last Name:</label>
+                    <input type="text" name="lname" required placeholder="Enter last name">
+                </section>
+                <section>
+                    <label for="age">Age:</label>
+                    <input type="number" name="age" required>
+                </section>
+                <section>
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" name="dob" >
+                </section>
+                <section>
+                    <label for="email">Email Id:</label>
+                    <input type="text" name="email">
+                </section>
+                <section>
+                <label for="gender">  Gender:</label>
+                <input type="radio" name="male">Male
+                <input type="radio" name="female">Female
+                </section>
+                <section>
+                <label for="department">Department:</label>
+                <input type="checkbox" name="ds">Data Science
+                <input type="checkbox" name="ml">ML
+                <input type="checkbox" name="ai">AI
+                <input type="checkbox" name="fsd">Full Stack Development
+                </section>
+                <section>
+                    <label for="departmeny">Department:</label>
+                    <select>
+                        <option>CSE</option>
+                        <option>ECE</option>
+                        <option>EEE</option>
+                        <option>CE</option>
+                        <option>ME</option>
+                        <option>IT</option>
+                    </select>
+                </section>
+                <section>
+                    <label for="file" >Upload Photo:</label>
+                    <input type="file" id="file" name="file">
+                </section>
+                <section>
+                    <label for="address">Address:</label>
+                   <textarea rows="3" cols="45" placeholder="Enter your address here"></textarea>
+                </section>
+                <section class="button-s">
+                    <input type="submit" value="submit" class="btn">
+                    <input type="reset" value="reset" class="btn">
+                </section>
+
+            </div>
+            
+        </form>
+    </body>
+    </html>

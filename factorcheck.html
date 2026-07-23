@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>factor check</title>
+    <script>
+        function factorcheck(){
+            let n=parseInt(prompt("Enter a number"));
+            if(n<=96){
+                if(96%n==0){
+                    alert("It is  a fator of 96");
+                }
+            }
+            else{
+                alert("It is greater than 96");
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="factorcheck()">check here</button>
+</body>
+</html>

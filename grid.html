@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Grid Image Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    .gallery-wrapper {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 15px;
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.1);
+    }
+
+    .overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .gallery-item:hover .overlay {
+      opacity: 1;
+    }
+
+    /* Featured/Wide Item */
+    .item-wide {
+      grid-column: span 2; /* Span two columns */
+    }
+
+    /* Featured/Tall Item */
+    .item-tall {
+      grid-row: span 2; /* Span two rows */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="gallery-wrapper">
+    <h1>Visual Inspiration Gallery</h1>
+    
+    <!-- The Grid Container -->
+    <main class="image-grid">
+      
+      <!-- Gallery Item 1 (Featured/Wide) -->
+      <div class="gallery-item item-wide">
+        <img src="https://unsplash.com" alt="Beautiful sunny beach">
+        <div class="overlay"><span>Ocean Breeze</span></div>
+      </div>
+
+      <!-- Gallery Item 2 -->
+      <div class="gallery-item">
+        <img src="https://unsplash.com" alt="Foggy mountain forest">
+        <div class="overlay"><span>Mountain Mist</span></div>
+      </div>
+
+      <!-- Gallery Item 3 -->
+      <div class="gallery-item">
+        <img src="https://unsplash.com" alt="Forest wooden path">
+        <div class="overlay"><span>Deep Woods</span></div>
+      </div>
+
+      <!-- Gallery Item 4 (Featured/Tall) -->
+      <div class="gallery-item item-tall">
+        <img src="https://unsplash.com" alt="Sunlight cutting through trees">
+        <div class="overlay"><span>Sunlight Burst</span></div>
+      </div>
+
+      <!-- Gallery Item 5 -->
+      <div class="gallery-item">
+        <img src="https://unsplash.com" alt="Green fields rolling hills">
+        <div class="overlay"><span>Green Valley</span></div>
+      </div>
+
+      <!-- Gallery Item 6 -->
+      <div class="gallery-item">
+        <img src="https://unsplash.com" alt="Aerial view of mountains">
+        <div class="overlay"><span>High Peak</span></div>
+      </div>
+
+    </main>
+  </div>
+
+</body>
+</html>

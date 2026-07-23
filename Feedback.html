@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border:1px solid black;
+            margin: 100px auto;
+            width: 500px;
+            height: 300px;
+            padding: 20px;
+        background-color: azure;
+        }
+        section{
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+        label{
+            display: inline-block;
+            width: 120px;
+            
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="post">
+        <section class="container">
+            <h2 align="center">Feedback Form</h2>
+            <section>
+                <label for="name">Name</label>
+                <input type="text" name="name" placeholder="Enter your name">
+            </section>
+            <section>
+                <label for="course">Course</label>
+                <input type="text" name="course" placeholder="Enter your course">
+            </section>
+            <section>
+                <label for="branch">Branch</label>
+                <input type="text" name="branch" placeholder="Enter your branch">
+            </section>
+            <section>
+                <label for="feedback">Feedback</label>
+                <textarea name="feedback" cols="30" rows="5" placeholder="Please provide your feedback here..."></textarea>
+            </section>
+            <section>
+                <input type="submit" value="Submit" style="margin-left: 150px; margin-top: 10px; background-color: rgb(167, 236, 121); color: white; border: none; padding: 10px 20px; border-radius: 5px;">
+        </section>
+    </form>
+</body>
+</html>
