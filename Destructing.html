@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //Destructing Example
+        const student={
+            id:12, name:"Bhavya Sri",section:'D'
+        };
+        const {id,name,section}=student;
+        document.write(id);
+        document.write("<br>" + name);
+        document.write("<br>" + section);
+        // implementing on arrays
+        let num1=[12,34,5678,89,14];
+        let[first,second,third,fourth,fifth]=num1;
+        document.write("The some elements in array is :" + "<br>" + first + " ");
+        document.write(second + " ");
+        document.write(fifth);
+        //skipping array values
+        let nums=[56,3,2,1,38,45];
+        let[one,,three,,,six]=nums
+        document.write("<br>" + "array is :" + one);
+         document.write( three + " ");
+         document.write(six + " ");
+         //swapping without using temp;
+         let x=67;
+         let y=76;
+         [x,y]=[y,x];
+         document.write("<br>" +"New x is :" + x);
+        document.write("<br>" + "New x is :" + y);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

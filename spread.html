@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //combining two arrays using spread operator
+        const nums=[656,67,8,9,23,67,8];
+        const nums2=[89,56,34,...nums];
+        document.write(JSON.stringify(nums2));
+        //combining two objects using spread operator
+        const employee={
+            id:89,name:"Aditya", role:"Developer"
+        };
+        const employee2={
+            ...employee, id:90, name:"Bhavya Sri", role:"Tester"
+        };
+        document.write(JSON.stringify(employee2));
+
+    </script>
+</body>
+</html>
